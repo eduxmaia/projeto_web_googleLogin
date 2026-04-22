@@ -1,0 +1,149 @@
+/* src/pages/Cadastro.module.css */
+
+.page {
+  padding: 60px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text-primary) 50%, var(--purple-300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.subtitle strong { color: var(--purple-300); }
+
+.formCard { padding: 36px; }
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.fullWidth { grid-column: 1 / -1; }
+
+.fieldHint {
+  font-size: 0.75rem;
+  color: var(--purple-400);
+  opacity: 0.8;
+}
+
+.optional {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.78rem;
+}
+
+.textarea { resize: vertical; min-height: 100px; }
+
+.formFooter {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Result */
+.resultSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.successBanner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.successIcon { font-size: 2rem; }
+
+.successBanner h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #86efac;
+  margin-bottom: 4px;
+}
+
+.successBanner p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.jsonCard { padding: 0; overflow: hidden; }
+
+.jsonHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+
+.jsonDots {
+  display: flex;
+  gap: 6px;
+}
+
+.jsonDots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.jsonLabel {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  flex: 1;
+}
+
+.copyBtn {
+  font-size: 0.8rem;
+  padding: 6px 14px;
+}
+
+.jsonContent {
+  padding: 24px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--purple-200);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .formGrid { grid-template-columns: 1fr; }
+  .page { padding: 40px 16px 60px; }
+}
