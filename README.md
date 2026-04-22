@@ -30,7 +30,7 @@ Aplicação React com autenticação real via Google (Firebase), navegação ent
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git clone https://github.com/eduxmaia/projeto_web_googleLogin
 cd projeto-web
 ```
 
@@ -89,16 +89,7 @@ VITE_FIREBASE_APP_ID=1:123456789:web:abc123
 1. No Firebase Console → **Authentication** → aba **Settings**
 2. Em **Domínios autorizados**, confirme que `localhost` está na lista
 
-## 🌐 Deploy na Vercel
-
-1. Faça push do projeto para um repositório GitHub público
-2. Acesse [vercel.com](https://vercel.com) → importe o repositório
-3. Em **Environment Variables**, adicione todas as variáveis do `.env`
-4. Clique em **Deploy**
-5. Após o deploy, copie a URL gerada (ex: `meu-projeto.vercel.app`)
-6. No Firebase → **Authentication** → **Settings** → **Domínios autorizados** → adicione essa URL
 
 ## 🔗 Links
 
-- **Repositório GitHub:** _adicione aqui_
-- **Deploy:** _adicione aqui_
+- **Repositório GitHub:** https://github.com/eduxmaia/projeto_web_googleLogin
